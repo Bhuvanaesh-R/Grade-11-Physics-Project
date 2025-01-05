@@ -1,0 +1,50 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    position: relative;
+    height: 100%;
+  }
+  
+  #movable-image {
+    background-color: red;
+    position: absolute;
+    cursor: grab;
+    width: 50px; /* Adjust the size of the image */
+    height: 50px;
+    z-index: 1000;
+  }
+  
+  .stats {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  #graphs {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column; /* Stack graphs vertically */
+    gap: 20px;
+  }
+  
+  canvas {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+
+  

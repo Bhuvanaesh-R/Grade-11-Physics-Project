@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Motion with Graphs</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <img id="movable-image">
+    <div id="motion-stats" class="stats">
+      <p>Position: (0, 0)</p>
+      <p>Speed: 0 px/s</p>
+      <p>Acceleration: 0 px/s²</p>
+      <p>Distance Moved: 0 px</p>
+    </div>
+  </div>
+
+  <div id="graphs">
+    <canvas id="distance-time-graph" width="600px" height="300px"></canvas>
+    <canvas id="velocity-time-graph" width="600px" height="300px"></canvas>
+    <canvas id="acceleration-time-graph" width="600px" height="300px"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
